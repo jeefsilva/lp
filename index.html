@@ -12,15 +12,15 @@
 <body class="flex-column-center">
 <header class="menu flex">
   <img class="menulogo" alt="Logo Voxus Academy" src="./assets/img/voxus-logo.png"/>
-  <ul class="menu-list flex-center flex-space-between">
-    <li><a href="#sobre" class="item-menu item-menu-color">Sobre</a></li>
-    <li><a href="#fotos" class="item-menu item-menu-color">Fotos</a></li>
-    <li><a href="#depo" class="item-menu item-menu-color">Depoimentos</a></li>
-    <li><a href="#cal" class="item-menu item-menu-color">Calendário</a></li>
+  <ul class="menu-list flex-center">
+    <li><a href="#sobre" class="item-menu menu-about item-menu-color">Sobre</a></li>
+    <li><a href="#fotos" class="item-menu menu-photo item-menu-color">Fotos</a></li>
+    <li><a href="#depo" class="item-menu menu-depo item-menu-color">Depoimentos</a></li>
+    <li><a href="#cal" class="item-menu menu-cal item-menu-color">Calendário</a></li>
   </ul>
 </header>
 <section class="primary-section flex-column-center">
-  <div class="flex">
+  <div class="flex primary-flex">
     <div class="flex-column primary-text-section">
       <h1 class="primary-title">Queremos transformar os profissionais de hoje</h1>
       <label class="primary-text">
@@ -34,9 +34,9 @@
 <section class="second-section flex-column-center">
   <div class="flex">
     <img class="secondary-img" src="./assets/img/second-section.svg">
-    <div class="flex-column">
+    <div class="flex-column second-text-section">
       <h1 class="secondary-title">
-        Através de workshops e treinamentos passamos conhecimento.
+        Através de workshops e treinamentos passamos conhecimento
       </h1>
       <label class="secondary-text">
         A Voxus Academy acredita que o mais justo é que cada profissional tenha a oportunidade de se preparar para o futuro. <br/>
@@ -65,6 +65,31 @@
       <h3 class="profile-testimonials-name">Rodolfo Ipsum</h3>
       <span class="profile-testimonials-role">Analista da Verisure</span>
     </div>
+  </div>
+</section>
+<img class="gray-bg" alt="Gray Background" src="assets/img/bg-gray.svg"/>
+<section class="gallery-section flex-center justify-center">
+  <div class="photo-gallery flex-column flex-wrap">
+
+    <div class="flex-end photo-gallery-margin">
+      <img id="img-1" alt="Imagem 1" class="img-1 photo-gallery-img" src="assets/img/img-1.png" onclick="zoomImg('img-1')"/>
+      <img id="img-2" alt="Imagem 2" class="img-2 photo-gallery-img" src="assets/img/img-2.png" onclick="zoomImg('img-2')"/>
+    </div>
+    <div class="flex-start">
+      <img id="img-3" alt="Imagem 3" class="img-3 photo-gallery-img" src="assets/img/img-3.png" onclick="zoomImg('img-3')"/>
+      <img id="img-4" alt="Imagem 4" class="img-4 photo-gallery-img" src="assets/img/img-4.png" onclick="zoomImg('img-4')"/>
+    </div>
+  </div>
+  <div class="gallery-text-section">
+    <h1 class="gallery-title">
+      Acreditamos em treinamentos com desenvolvimento
+    </h1>
+    <span class="gallery-text">
+      A Voxus Academy acredita que o mais justo é que cada
+      profissional tenha a oportunidade de se preparar para o futuro.
+      As melhores pessoas podem passar a ter as habilidades necessárias
+      para orientar sua carreira.
+    </span>
   </div>
 </section>
 </body>

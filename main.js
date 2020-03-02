@@ -1,10 +1,5 @@
-function successCallback(result) {
-  console.log("It succeeded with " + result);
+function zoomImg(classImg) {
+    let element = document.getElementById(classImg);
+    element.classList.toggle("zoom-img");
+    imgZoom = true;
 }
-
-function failureCallback(error) {
-  console.log("It failed with " + error);
-}
-
-const promise = doSomething();
-promise.then(successCallback, failureCallback);
