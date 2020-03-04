@@ -1,0 +1,319 @@
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .menulogo {
+    margin-right: 228px;
+  }
+  .menu-list {
+    width: 500px;
+  }
+
+  .bg-blue {
+    margin-bottom: -800px;
+    margin-top: -30px;
+  }
+
+  .primary-flex {
+    width: 1024px;
+  }
+
+  .dragon-logo {
+    margin-left: 0;
+  }
+
+  .secondary-img {
+    margin-right: 0;
+    width: 300px;
+    margin-top: 80px;
+  }
+
+  .secondary-title {
+    margin-top: 62px;
+  }
+
+  .gray-bg {
+    width: 720px;
+    margin-top: -106px;
+    margin-bottom: -400px;
+  }
+
+  .second-text-section {
+    margin-right: 0;
+  }
+  .company-depo-section {
+    width: 1024px;
+  }
+
+  .company-depo-slider-section {
+    width: 700px;
+  }
+
+  .bubbles {
+    width: 720px;
+  }
+
+  .ctb-city {
+    margin-right: 10px;
+  }
+
+  .sp-city {
+    margin-right: 10px;
+  }
+
+  .calendar-section {
+    margin-bottom: 400px;
+  }
+
+  .bubbles {
+    z-index: -1;
+  }
+
+  .bg-yellow {
+    width: 100%;
+    height: 900px;
+    margin-top: 0;
+    margin-bottom: -600px;
+  }
+
+  .footer-width {
+    width: 900px;
+  }
+
+  .footer-info-section {
+    margin-right: 20px;
+  }
+
+  .academy-footer-list {
+    margin-right: 20px;
+  }
+
+  .about-footer-list {
+    margin-right: 20px;
+  }
+
+  .copyright-text {
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menulogo {
+    margin-right: 50px;
+  }
+
+  .menu-list {
+    width: 460px;
+  }
+
+  .menu-about,
+  .menu-photo {
+    margin-right: 44px;
+  }
+
+  .menu-depo {
+    margin-right: 30px;
+  }
+
+  .bg-blue {
+    margin-bottom: -800px;
+    width: auto;
+  }
+
+  .primary-text-section {
+    width: 400px;
+    margin-left: 40px;
+  }
+
+  .primary-title {
+    margin-top: 200px;
+    width: 480px;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  .primary-text {
+    width: 460px;
+    height: auto;
+  }
+
+  .primary-flex {
+    width: 768px;
+  }
+
+  .dragon-logo {
+    width: 300px;
+    margin-top: 128px;
+    margin-left: 20px;
+  }
+
+  .secondary-img {
+    margin-right: 0;
+    width: 280px;
+    margin-top: 80px;
+  }
+
+  .secondary-title {
+    margin-top: 62px;
+  }
+
+  .gallery-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-text-section {
+    margin-left: 12px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .gallery-title {
+    text-align: center;
+  }
+
+  .gray-bg {
+    width: 720px;
+    margin-top: -106px;
+    margin-bottom: -400px;
+  }
+
+  .img-1,
+  .img-2,
+  .img-3,
+  .img-4 {
+    width: 200px;
+    height: auto;
+  }
+
+  .second-text-section {
+    margin-right: 20px;
+  }
+
+  .logo-group {
+    width: 400px;
+  }
+
+  .company-depo-section {
+    width: 768px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-depo-slider-section {
+    width: 700px;
+  }
+
+  .company-depo-slider {
+    justify-content: center;
+  }
+
+  .company-caption-section {
+    justify-content: center;
+  }
+
+  .company-depo-profile-section {
+    justify-content: center;
+  }
+
+  .testimonials-bg {
+    margin-right: 0;
+  }
+
+  .bubbles {
+    width: 720px;
+  }
+
+  .events-title {
+    width: 600px;
+  }
+
+  .city-group {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .ctb-city {
+    margin-right: 10px;
+  }
+
+  .sp-city {
+    margin-right: 10px;
+  }
+
+  .calendar-section {
+    margin-right: 0;
+    margin-bottom: 400px;
+  }
+
+  .calendar-card {
+    width: 606px;
+    height: 596px;
+  }
+
+  .calendar-logo {
+    margin: 39px 0 70px 140px;
+  }
+
+  .ticket-text {
+    width: 500px;
+  }
+
+  .bubbles {
+    z-index: -1;
+  }
+
+  .bg-yellow {
+    width: auto;
+    height: 1900px;
+    margin-top: 0;
+    margin-bottom: -1300px;
+  }
+
+  .footer-width {
+    width: 600px;
+    flex-direction: column;
+  }
+
+  .footer-info-section {
+    margin-right: 20px;
+    align-items: center;
+  }
+
+  .academy-footer-list {
+    margin-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .about-footer-list {
+    margin-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .contact-footer-list {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .copyright-text, .copyright-thanks, .logo-footer-gray, .ecbr-logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .testimonials-section {
+    margin-right: 0;
+  }
+
+  .photo-gallery {
+    margin-left: 0;
+  }
+
+  .events-title {
+    margin-right: 0;
+  }
+}

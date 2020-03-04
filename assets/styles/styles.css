@@ -51,15 +51,6 @@ footer span {
   line-height: 36px;
 }
 
-.menu-about,
-.menu-photo {
-  margin-right: 86px;
-}
-
-.menu-depo {
-  margin-right: 62px;
-}
-
 .testimonials {
   font-style: italic;
   font-size: 24px;
@@ -179,6 +170,7 @@ a {
   position: fixed;
   justify-content: center;
   z-index: 100;
+  box-shadow: 0px 1px 0px rgba(59, 67, 86, 0.05);
 }
 
 .menulogo {
@@ -191,6 +183,15 @@ a {
 .menu-list {
   padding: 24px 0 22px 0;
   width: 650px;
+}
+
+.menu-about,
+.menu-photo {
+  margin-right: 86px;
+}
+
+.menu-depo {
+  margin-right: 62px;
 }
 
 .item-menu-color {
