@@ -35,9 +35,13 @@
     margin-left: 0;
   }
 
+  .second-section {
+    padding-top: 120px;
+  }
+
   .secondary-img {
     margin-right: 0;
-    width: 300px;
+    width: 500px;
     margin-top: 80px;
   }
 
@@ -46,9 +50,9 @@
   }
 
   .gray-bg {
-    width: 720px;
+    width: 100%;
     margin-top: -106px;
-    margin-bottom: -400px;
+    margin-bottom: -800px;
   }
 
   .second-text-section {
@@ -76,6 +80,8 @@
 
   .bubbles {
     z-index: -1;
+    margin-top: -900px;
+    margin-bottom: -800px;
   }
 
   .bg-yellow {
@@ -400,6 +406,7 @@ margin-bottom: 40px;
 
   .primary-section {
     margin-bottom: 420px;
+    padding-top: 60px;
   }
 
   .primary-text-section {
@@ -662,6 +669,11 @@ text-align: center;
     margin-top: 60px;
   }
 
+  .contact-footer-list li {
+text-align: center;
+    align-items: center;
+  }
+
   .copyright-text, .copyright-thanks, .logo-footer-gray, .ecbr-logo {
     margin-right: 0;
     margin-bottom: 20px;
@@ -673,6 +685,7 @@ text-align: center;
 
   .gallery-section {
     margin-top: 300px;
+    padding-top: 200px;
   }
 
   .photo-gallery {
@@ -713,9 +726,7 @@ text-align: center;
 
   .logo-sage {
     width: 71px;
-    padding: 19px 20px 13px 19px;
     background: #ffffff;
-    box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
     border-radius: 80px;
   }
 

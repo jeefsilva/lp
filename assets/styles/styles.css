@@ -18,7 +18,7 @@ html {
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 44px;
   line-height: 52px;
 }
@@ -55,6 +55,7 @@ footer span {
   font-style: italic;
   font-size: 24px;
   line-height: 39px;
+  height: 195px;
 }
 
 .special-title {
@@ -213,7 +214,7 @@ a {
 .primary-section {
   width: 100%;
   height: 662px;
-  padding-top: 66px;
+  padding-top: 80px;
 }
 
 .primary-flex {
@@ -369,7 +370,7 @@ a {
 }
 
 .photo-gallery {
-  margin-left: -205px;
+  margin-left: -80px;
 }
 
 .photo-gallery-margin {
@@ -520,6 +521,7 @@ a {
 }
 
 .company-depo-section {
+  padding-top: 120px;
   margin-bottom: 250px;
   width: 1160px;
 }
@@ -538,12 +540,14 @@ a {
   background: #ffffff;
   box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
   border-radius: 80px;
+  cursor: pointer;
 }
 
 .logo-sage-deselected {
   width: 71px;
   height: 29px;
   box-shadow: none;
+  cursor: pointer;
 }
 
 .logo-sage-deselected:hover {
@@ -551,12 +555,14 @@ a {
   background: #ffffff;
   box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
   border-radius: 80px;
+  cursor: pointer;
 }
 
 .logo-ogilvy {
   background: #ffffff;
   border-radius: 80px;
   margin-left: 48px;
+  cursor: pointer;
 }
 
 .logo-ogilvy-selected {
@@ -566,6 +572,7 @@ a {
   margin-left: 15px;
   padding: 21px 32px;
   box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
+  cursor: pointer;
 }
 
 .logo-ogilvy:hover {
@@ -573,26 +580,27 @@ a {
   margin-left: 15px;
   padding: 21px 32px;
   box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
+  cursor: pointer;
 }
 
 .logo-amaro {
   background: #ffffff;
-  border-radius: 80px;
   margin-left: 48px;
+  cursor: pointer;
 }
 
 .logo-amaro-selected {
-  width: 114px;
-  height: 19px;
   margin-left: 42px;
-  border-radius: 80px;
-  padding: 21px 32px;
+  border-radius: 40px;
+  padding: 32px 32px;
   box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
+  cursor: pointer;
 }
 
 .logo-amaro:hover {
   margin-left: 16px;
-  padding: 21px 32px;
+  padding: 28px 32px;
+  border-radius: 40px;
   box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
 }
 
@@ -637,7 +645,7 @@ a {
 
 .calendar-section {
   margin-right: 60px;
-  margin-top: 46px;
+  padding-top: 120px;
 }
 
 .calendar-title {
@@ -705,9 +713,9 @@ a {
 
 .bubbles {
   width: 100%;
-  height: 1144px;
+  height: 1200px;
   margin-top: -488px;
-  margin-bottom: -580px;
+  margin-bottom: -540px;
   background-image: url(/assets/img/bubbles.svg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -795,6 +803,14 @@ footer {
   margin-top: 20px;
 }
 
+.list-tags a {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--footer);
+  margin-top: 20px;
+}
+
 .address {
   width: 271px;
 }
@@ -855,4 +871,11 @@ footer {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+}
+
+
+footer a:hover {
+  color: var(--menu-active);
+  text-decoration: var(--menu-active);
+  text-decoration: underline !important;
 }
