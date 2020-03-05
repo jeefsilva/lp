@@ -366,6 +366,16 @@ text-align: center;
     position: fixed;
   }
 
+  .hide {
+    display: none;
+  }
+
+  .close-drop {
+    margin-left: -34px;
+    background-color: #326FFF;
+    padding: 0 4px;
+  }
+
   .item-mobile-menu {
     color: var(--secondary);
     font-size: 18px;

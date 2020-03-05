@@ -1,6 +1,7 @@
 nav {
     position: fixed;
     top: 60px;
+    width: 100%;
 }
 
 nav .drop-down {
@@ -10,7 +11,7 @@ nav .drop-down {
   height: 300px; 
   background-color: #326FFF;
   font-family: Arial;
-  width: 330px;
+  width: 100%;
   margin: 0 auto;
   padding: 40px 0 0 0;
   text-align: center;
@@ -20,6 +21,7 @@ nav .drop-down {
 
 nav .drop-down.closed {
   height: 0;
+  background-color: transparent;
 }
 
 nav .drop-down li {
