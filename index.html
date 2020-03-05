@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/styles/reset.css" />
     <link rel="stylesheet" href="assets/styles/styles.css" />
     <link rel="stylesheet" href="assets/styles/media.css" />
+    <link rel="stylesheet" href="assets/styles/dropdown.css" />
     <title>Layout Voxus Academy</title>
   </head>
   <body class="flex-column-center">
@@ -43,7 +44,19 @@
         </li>
       </ul>
     </header>
-    <img class="bg-blue" alt="Blue Background" src="/assets/img/bg-blue.svg" />
+    <div class="menu-mobile flex-center justify-center">
+      <img class="logo-mobile" alt="Voxus Academy Logo" src="/assets/img/academy-logo.png"/>
+      <img class="dropdown" alt="Dropdown icon" src="/assets/img/dropdown.png" onclick="dropDown()"/>
+    </div>
+    <nav>
+      <div id="drop-down" class="drop-down closed flex-column-center">
+        <a href="#" class="item-mobile-menu">Sobre</a>
+        <a href="#" class="item-mobile-menu">Fotos</a>
+        <a href="#" class="item-mobile-menu">Depoimentos</a>
+        <a href="#" class="item-mobile-menu">Calendário</a>
+      </div>
+    </nav>
+    <div class="bg-blue"></div>
     <section class="primary-section flex-column-center">
       <div class="flex primary-flex">
         <div class="flex-column primary-text-section">
@@ -65,7 +78,7 @@
       </div>
     </section>
     <section class="second-section flex-column-center">
-      <div class="flex">
+      <div class="flex flex-mobile">
         <img class="secondary-img" src="./assets/img/second-section.svg" />
         <div class="flex-column second-text-section">
           <h1 class="secondary-title">
@@ -98,7 +111,8 @@
         amet luctus. Dui id ornare arcu odio ut sem.”
       </span>
       <div class="flex-center company-testimonials-section">
-        <img
+        <div class="flex-center">
+          <img
           alt="Company Logo"
           class="company-testimonials-logo"
           src="./assets/img/company.png"
@@ -108,6 +122,7 @@
           class="profile-testimonials"
           src="./assets/img/profile.png"
         />
+        </div>
         <div class="flex-column-center profile-testimonials-section">
           <h3 class="profile-testimonials-name">Rodolfo Ipsum</h3>
           <span class="profile-testimonials-role">Analista da Verisure</span>
@@ -122,7 +137,7 @@
           <img class="modal-content" id="img01" />
         </div>
 
-        <div class="flex-end photo-gallery-margin">
+        <div class="flex-end photo-gallery-margin photo-gallery-mobile">
           <img
             id="img-1"
             alt="Imagem 1"
@@ -138,7 +153,7 @@
             onclick="zoomImg('img-2')"
           />
         </div>
-        <div class="flex-start">
+        <div class="flex-start photo-gallery-mobile">
           <img
             id="img-3"
             alt="Imagem 3"
@@ -244,16 +259,8 @@
         </div>
       </div>
     </section>
-    <img
-      class="bubbles"
-      alt="Background Yellow Bubbles"
-      src="/assets/img/bubbles.svg"
-    />
-    <img
-      class="bg-yellow"
-      alt="Background Yellow Bubbles"
-      src="/assets/img/yellow-bubbles.svg"
-    />
+    <div class="bubbles"></div>
+    <div class="bg-yellow"></div>
     <section class="events-section flex-column-center">
       <h1 class="special-title events-title">
         Nosso objetivo é levar essa experiência para o Brasil inteiro
@@ -312,6 +319,7 @@
         <h6 class="copyright-text">
           © 2019, Voxus. Todos os direitos reservados.
         </h6>
+        <div class="flex-center copyright-flex">
         <h6 class="copyright-thanks">Oferecimento:</h6>
         <img
           alt="Voxus Footer Logo"
@@ -324,6 +332,7 @@
           src="/assets/img/logo-ecbr.png"
         />
       </div>
+    </div>
     </footer>
   </body>
   <script type="text/javascript" src="main.js"></script>

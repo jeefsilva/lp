@@ -16,3 +16,9 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+function dropDown() {
+    var dropDownId = document.getElementById("drop-down")
+    dropDownId.classList.toggle('closed')
+ 
+}

@@ -1,3 +1,14 @@
+:root {
+  /* COLORS */
+  --menu-item: #5b6170;
+  --menu-active: #326fff;
+  --primary: #203656;
+  --secondary: #ffffff;
+  --subtitle: #748296;
+  --alert: #f44d8d;
+  --footer: #91a1ad;
+}
+
 @media (min-width: 1024px) and (max-width: 1400px) {
   .menulogo {
     margin-right: 228px;
@@ -7,7 +18,7 @@
   }
 
   .bg-blue {
-    margin-bottom: -800px;
+    margin-bottom: -760px;
     margin-top: -30px;
   }
 
@@ -46,10 +57,6 @@
     width: 700px;
   }
 
-  .bubbles {
-    width: 720px;
-  }
-
   .ctb-city {
     margin-right: 10px;
   }
@@ -67,8 +74,6 @@
   }
 
   .bg-yellow {
-    width: 100%;
-    height: 900px;
     margin-top: 0;
     margin-bottom: -600px;
   }
@@ -113,13 +118,19 @@
   }
 
   .bg-blue {
-    margin-bottom: -800px;
-    width: auto;
+    margin-bottom: -1080px;
+    height: 900px;
+  }
+
+  .primary-section {
+    margin-bottom: 220px;
   }
 
   .primary-text-section {
     width: 400px;
-    margin-left: 40px;
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
   }
 
   .primary-title {
@@ -136,12 +147,14 @@
 
   .primary-flex {
     width: 768px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .dragon-logo {
     width: 300px;
-    margin-top: 128px;
-    margin-left: 20px;
+    margin-top: 28px;
+    margin-left: 0;
   }
 
   .secondary-img {
@@ -152,11 +165,18 @@
 
   .secondary-title {
     margin-top: 62px;
+    text-align: center;
   }
 
+.secondary-text {
+text-align: center;
+}
+
   .gallery-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+    background-size: 500px;
+    background-position: left bottom;
   }
 
   .gallery-text-section {
@@ -175,6 +195,10 @@
     margin-bottom: -400px;
   }
 
+  .calendar-info-title {
+    width: 340px;
+  }
+
   .img-1,
   .img-2,
   .img-3,
@@ -189,11 +213,12 @@
 
   .logo-group {
     width: 400px;
+    margin-bottom: 120px;
   }
 
   .company-depo-section {
     width: 768px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -215,10 +240,6 @@
 
   .testimonials-bg {
     margin-right: 0;
-  }
-
-  .bubbles {
-    width: 720px;
   }
 
   .events-title {
@@ -261,8 +282,7 @@
   }
 
   .bg-yellow {
-    width: auto;
-    height: 1900px;
+    height: 1920px;
     margin-top: 0;
     margin-bottom: -1300px;
   }
@@ -316,4 +336,387 @@
   .events-title {
     margin-right: 0;
   }
+
+  .flex-mobile {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+.copyright-section {
+  flex-direction: column-reverse;
+}
+
+  .copyright-flex {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    width: 100%;
+    height: 60px;
+    background-color: var(--menu-active);
+    display: flex;
+    z-index: 100;
+    position: fixed;
+  }
+
+  .item-mobile-menu {
+    color: var(--secondary);
+    font-size: 18px;
+line-height: 36px;
+margin-bottom: 40px;
+
+  }
+
+  .logo-mobile {
+    margin-right: 75px;
+  }
+
+  .bg-blue {
+    margin-bottom: -1340px;
+    height: 1200px;
+  }
+
+  .primary-section {
+    margin-bottom: 420px;
+  }
+
+  .primary-text-section {
+    width: 330px;
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .primary-title {
+    margin-top: 200px;
+    width: 330px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .primary-text {
+    width: 330px;
+    height: auto;
+  }
+
+  .primary-flex {
+    width: 330px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dragon-logo {
+    width: 300px;
+    margin-top: 28px;
+    margin-left: 0;
+  }
+
+  .secondary-img {
+    margin-right: 0;
+    width: 327px;
+    margin-top: 40px;
+  }
+
+  .secondary-title {
+    width: 330px;
+    margin-top: 62px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+.secondary-text {
+  width: 330px;
+text-align: center;
+}
+
+  .gallery-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    background-size: 500px;
+    background-position: left bottom;
+  }
+
+  .gallery-text-section {
+    margin-left: 12px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .gallery-title {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .photo-gallery-margin {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .gray-bg {
+    width: 100%;
+    margin-top: -106px;
+    margin-bottom: -400px;
+  }
+
+  .calendar-info-title {
+    width: 330px;
+  }
+
+  .testimonials-title {
+    width: 330px;
+    font-weight: 500;
+  }
+
+  .testimonials-text {
+    width: 330px;
+    margin-left: 0;
+    margin-top: 34px;
+  }
+
+  .company-testimonials-section {
+    margin-top: 30px;
+    margin-right: 0;
+    flex-direction: column;
+}
+
+  .img-1,
+  .img-2,
+  .img-3,
+  .img-4 {
+    width: 330px;
+    height: auto;
+  }
+
+  .img-1, .img-3 {
+    margin-bottom: 20px;
+  }
+
+  .second-text-section {
+    margin-right: 0;
+  }
+
+  .logo-group {
+    width: 326px;
+    margin-bottom: 120px;
+  }
+
+  .company-depo-section {
+    width: 330px;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 150px;
+  }
+
+  .company-depo-slider-section {
+    width: 330px;
+    margin-top: 40px;
+  }
+
+  .company-depo-slider {
+    justify-content: center;
+  }
+
+  .company-caption-section {
+    justify-content: center;
+  }
+
+  .company-depo-profile-section {
+    justify-content: center;
+    width: 330px;
+    justify-content: flex-start;
+  }
+
+  .testimonials-bg {
+    margin-right: 0;
+  }
+
+  .testimonials-icon {
+    margin-top: -220px;
+}
+
+  .events-title {
+    width: 330px;
+  }
+
+  .city-group {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .ctb-city {
+    margin-right: 10px;
+  }
+
+  .sp-city {
+    margin-right: 10px;
+  }
+
+  .calendar-section {
+    margin-right: 0;
+    margin-bottom: 400px;
+  }
+
+  .calendar-card {
+    width: 335px;
+    height: 656px;
+  }
+
+  .calendar-logo {
+    margin: 63px 0 60px 29px;
+    width: 276px;
+  }
+
+  .calendar-info-title {
+    width: 271px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .calendar-text-section {
+    margin-left: 31px;
+  }
+
+  .calendar-info-date {
+    font-size: 16px;
+  }
+
+  .ticket-title {
+    font-size: 18px;
+    margin-left: 19px;
+  }
+
+  .ticket-text {
+    width: 272px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .ticket-logo {
+    width: 29px;
+  }
+
+  .bubbles {
+    z-index: -1;
+    margin-top: -1288px;
+  }
+
+  .bg-yellow {
+    height: 1920px;
+    margin-top: 0;
+    margin-bottom: -1440px;
+  }
+
+  .footer-width {
+    width: 330px;
+    flex-direction: column;
+  }
+
+  .footer-info-section {
+    margin-right: 20px;
+    align-items: center;
+  }
+
+  .academy-footer-list {
+    margin-top: 60px;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .about-footer-list {
+    margin-top: 60px;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .contact-footer-list {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-top: 60px;
+  }
+
+  .copyright-text, .copyright-thanks, .logo-footer-gray, .ecbr-logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .testimonials-section {
+    margin-right: 0;
+  }
+
+  .gallery-section {
+    margin-top: 300px;
+  }
+
+  .photo-gallery {
+    margin-left: 0;
+  }
+
+  .events-title {
+    margin-right: 0;
+  }
+
+  .flex-mobile {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+.copyright-section {
+  flex-direction: column-reverse;
+  margin-left: 0;
+}
+
+.copyright-text {
+  margin-top: 60px;
+}
+
+  .copyright-flex {
+    flex-direction: column;
+  }
+
+  .photo-gallery-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-1, .img-3 {
+    margin-right: 0;
+  }
+
+  .logo-sage {
+    width: 71px;
+    padding: 19px 20px 13px 19px;
+    background: #ffffff;
+    box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
+    border-radius: 80px;
+  }
+
+  .logo-ogilvy {
+    width: 48px;
+    background: #ffffff;
+    border-radius: 80px;
+    margin-left: 48px;
+}
+
+.logo-amaro {
+  width: 58px;
+  background: #ffffff;
+  border-radius: 80px;
+  margin-left: 48px;
+}
+
+
 }
