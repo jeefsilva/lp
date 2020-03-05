@@ -45,16 +45,35 @@
       </ul>
     </header>
     <div class="menu-mobile flex-center justify-center">
-      <img class="logo-mobile" alt="Voxus Academy Logo" src="/assets/img/academy-logo.png"/>
-      <img class="dropdown" alt="Dropdown icon" src="/assets/img/dropdown.png" onclick="dropDown()"/>
-      <img id="close-drop" class="close-drop hide" alt="Close icon" src="/assets/img/close.png" onclick="dropDown()"/>
+      <img
+        class="logo-mobile"
+        alt="Voxus Academy Logo"
+        src="/assets/img/academy-logo.png"
+      />
+      <img
+        class="dropdown"
+        alt="Dropdown icon"
+        src="/assets/img/dropdown.png"
+        onclick="dropDown()"
+      />
+      <img
+        id="close-drop"
+        class="close-drop hide"
+        alt="Close icon"
+        src="/assets/img/close.png"
+        onclick="dropDown()"
+      />
     </div>
     <nav>
       <div id="drop-down" class="drop-down closed flex-column-center">
-        <a href="#" class="item-mobile-menu">Sobre</a>
-        <a href="#" class="item-mobile-menu">Fotos</a>
-        <a href="#" class="item-mobile-menu">Depoimentos</a>
-        <a href="#" class="item-mobile-menu">Calendário</a>
+        <a href="#sobre" class="item-mobile-menu" onclick="dropDown()">Sobre</a>
+        <a href="#fotos" class="item-mobile-menu" onclick="dropDown()">Fotos</a>
+        <a href="#depo" class="item-mobile-menu" onclick="dropDown()"
+          >Depoimentos</a
+        >
+        <a href="#cal" class="item-mobile-menu" onclick="dropDown()"
+          >Calendário</a
+        >
       </div>
     </nav>
     <div class="bg-blue"></div>
@@ -78,7 +97,7 @@
         />
       </div>
     </section>
-    <section class="second-section flex-column-center">
+    <section id="sobre" class="second-section flex-column-center">
       <div class="flex flex-mobile">
         <img class="secondary-img" src="./assets/img/second-section.svg" />
         <div class="flex-column second-text-section">
@@ -114,15 +133,15 @@
       <div class="flex-center company-testimonials-section">
         <div class="flex-center">
           <img
-          alt="Company Logo"
-          class="company-testimonials-logo"
-          src="./assets/img/company.png"
-        />
-        <img
-          alt="Profile Image"
-          class="profile-testimonials"
-          src="./assets/img/profile.png"
-        />
+            alt="Company Logo"
+            class="company-testimonials-logo"
+            src="./assets/img/company.png"
+          />
+          <img
+            alt="Profile Image"
+            class="profile-testimonials"
+            src="./assets/img/profile.png"
+          />
         </div>
         <div class="flex-column-center profile-testimonials-section">
           <h3 class="profile-testimonials-name">Rodolfo Ipsum</h3>
@@ -131,7 +150,7 @@
       </div>
     </section>
     <img class="gray-bg" alt="Gray Background" src="assets/img/bg-gray.svg" />
-    <section class="gallery-section flex justify-center">
+    <section id="fotos" class="gallery-section flex justify-center">
       <div class="photo-gallery flex-column flex-wrap">
         <div id="myModal" class="modal">
           <span class="close">&times;</span>
@@ -183,42 +202,100 @@
         </span>
       </div>
     </section>
-    <section class="company-depo-section flex">
+    <section id="depo" class="company-depo-section flex">
       <div class="company-depo-slider-section">
         <div class="company-depo-slider flex-center">
-          <img alt="Logo Sage" class="logo-sage" src="/assets/img/Sage.png" />
           <img
+            id="logo-sage"
+            alt="Logo Sage"
+            class="logo-sage"
+            src="/assets/img/Sage.png"
+            onclick="logoSageEnable()"
+          />
+          <img
+            id="logo-ogilvy"
             alt="Logo Ogilvy"
             class="logo-ogilvy"
             src="/assets/img/Ogilvy.png"
+            onclick="logoOgilvyEnable()"
           />
           <img
+            id="logo-amaro"
             alt="Logo Amaro"
             class="logo-amaro"
             src="/assets/img/Amaro.png"
+            onclick="logoAmaroEnable()"
           />
         </div>
-        <div class="company-caption-section flex">
-          <span class="testimonials company-caption-text">
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor
-            urna nunc id cursus metus aliquam eleifend.”
-          </span>
-          <img
-            class="testimonials-bg"
-            alt="Testimonials Background Icon"
-            src="/assets/img/testimonials-bg.svg"
-          />
+        <div id="sage-field">
+          <div class="company-caption-section flex">
+            <span class="testimonials company-caption-text">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor
+              urna nunc id cursus metus aliquam eleifend.”
+            </span>
+            <img
+              class="testimonials-bg"
+              alt="Testimonials Background Icon"
+              src="/assets/img/testimonials-bg.svg"
+            />
+          </div>
+          <div class="flex-center company-depo-profile-section">
+            <img
+              alt="Company depoiment Profile Image"
+              class="company-depo-profile-img"
+              src="/assets/img/company-profile.png"
+            />
+            <div class="flex-column">
+              <span class="company-depo-name">Denise Silva</span>
+              <span class="company-depo-company-name">Sage</span>
+            </div>
+          </div>
         </div>
-        <div class="flex-center company-depo-profile-section">
-          <img
-            alt="Company depoiment Profile Image"
-            class="company-depo-profile-img"
-            src="/assets/img/company-profile.png"
-          />
-          <div class="flex-column">
-            <span class="company-depo-name">Denise Silva</span>
-            <span class="company-depo-company-name">Sage</span>
+        <div id="ogilvy-field" class="display-none">
+          <div class="company-caption-section flex">
+            <span class="testimonials company-caption-text">
+              “Cursus eget nunc scelerisque viverra. Quam pellentesque nec nam aliquam. Commodo ullamcorper a lacus vestibulum sed arcu. Diam sit amet nisl suscipit adipiscing.”
+            </span>
+            <img
+              class="testimonials-bg"
+              alt="Testimonials Background Icon"
+              src="/assets/img/testimonials-bg.svg"
+            />
+          </div>
+          <div class="flex-center company-depo-profile-section">
+            <img
+              alt="Company depoiment Profile Image"
+              class="company-depo-profile-img"
+              src="/assets/img/felipe.png"
+            />
+            <div class="flex-column">
+              <span class="company-depo-name">Felipe Lopes</span>
+              <span class="company-depo-company-name">Ogilvy</span>
+            </div>
+          </div>
+        </div>
+        <div id="amaro-field" class="display-none">
+          <div class="company-caption-section flex">
+            <span class="testimonials company-caption-text">
+              “Est lorem ipsum dolor sit amet consectetur adipiscing elit. Quam nulla porttitor massa id. Nunc vel risus commodo viverra maecenas accumsan lacus. At ultrices mi tempus imperdiet.”
+            </span>
+            <img
+              class="testimonials-bg"
+              alt="Testimonials Background Icon"
+              src="/assets/img/testimonials-bg.svg"
+            />
+          </div>
+          <div class="flex-center company-depo-profile-section">
+            <img
+              alt="Company depoiment Profile Image"
+              class="company-depo-profile-img"
+              src="/assets/img/fulana.png"
+            />
+            <div class="flex-column">
+              <span class="company-depo-name">Fulana deTal</span>
+              <span class="company-depo-company-name">Amaro</span>
+            </div>
           </div>
         </div>
       </div>
@@ -228,7 +305,7 @@
         class="logo-group"
       />
     </section>
-    <section class="calendar-section flex-column-center">
+    <section id="cal" class="calendar-section flex-column-center">
       <h1 class="calendar-title">Calendário</h1>
       <div class="calendar-card">
         <img
@@ -321,19 +398,19 @@
           © 2019, Voxus. Todos os direitos reservados.
         </h6>
         <div class="flex-center copyright-flex">
-        <h6 class="copyright-thanks">Oferecimento:</h6>
-        <img
-          alt="Voxus Footer Logo"
-          class="logo-footer-gray"
-          src="/assets/img/voxus_grey.png"
-        />
-        <img
-          alt="E-commerce Brasil Logo"
-          class="ecbr-logo"
-          src="/assets/img/logo-ecbr.png"
-        />
+          <h6 class="copyright-thanks">Oferecimento:</h6>
+          <img
+            alt="Voxus Footer Logo"
+            class="logo-footer-gray"
+            src="/assets/img/voxus_grey.png"
+          />
+          <img
+            alt="E-commerce Brasil Logo"
+            class="ecbr-logo"
+            src="/assets/img/logo-ecbr.png"
+          />
+        </div>
       </div>
-    </div>
     </footer>
   </body>
   <script type="text/javascript" src="main.js"></script>

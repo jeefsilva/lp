@@ -329,6 +329,7 @@ a {
   z-index: -10;
   margin-top: -106px;
   margin-bottom: -1000px;
+  width: 100%;
 }
 
 .photo-gallery-img {
@@ -533,7 +534,20 @@ a {
 }
 
 .logo-sage {
-  padding: 26px 27px 18px 27px;
+  padding: 21px 32px;
+  background: #ffffff;
+  box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
+  border-radius: 80px;
+}
+
+.logo-sage-deselected {
+  width: 71px;
+  height: 29px;
+  box-shadow: none;
+}
+
+.logo-sage-deselected:hover {
+  padding: 21px 32px;
   background: #ffffff;
   box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
   border-radius: 80px;
@@ -543,6 +557,15 @@ a {
   background: #ffffff;
   border-radius: 80px;
   margin-left: 48px;
+}
+
+.logo-ogilvy-selected {
+  width: 90px;
+  height: 45px;
+  border-radius: 80px;
+  margin-left: 15px;
+  padding: 21px 32px;
+  box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
 }
 
 .logo-ogilvy:hover {
@@ -558,13 +581,23 @@ a {
   margin-left: 48px;
 }
 
+.logo-amaro-selected {
+  width: 114px;
+  height: 19px;
+  margin-left: 42px;
+  border-radius: 80px;
+  padding: 21px 32px;
+  box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
+}
+
 .logo-amaro:hover {
   margin-left: 16px;
-  padding: 21px 27px;
+  padding: 21px 32px;
   box-shadow: 0px 4px 5px rgba(42, 42, 42, 0.2);
 }
 
 .company-depo-slider {
+  height: 100px;
   margin-bottom: 60px;
 }
 
@@ -727,6 +760,10 @@ a {
   background-image: url(/assets/img/go-bg.png);
   background-repeat: no-repeat;
   width: 275px;
+}
+
+.go-city .city-title {
+  padding-right: 30px;
 }
 
 footer {

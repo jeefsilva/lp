@@ -8,6 +8,11 @@
   --alert: #f44d8d;
   --footer: #91a1ad;
 }
+@media (min-width: 1600px) {
+  .bg-yellow {
+    height: 1020px;
+  }
+}
 
 @media (min-width: 1024px) and (max-width: 1400px) {
   .menulogo {
